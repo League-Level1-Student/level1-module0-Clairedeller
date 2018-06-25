@@ -21,10 +21,15 @@ goot.setVisible(true);
 		//3. Run your program. Do you see your window? It's probably very small.
 		
 		//4. Set the default close operation to JFrame.EXIT_ON_CLOSE
+goot.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		//5. Create and initialize an object of the JPanel class
-
+JPanel ook = new JPanel();
 		//6. Create and initialize an object of the JLabel class
+
+
+
+
 
 		//7. Set the text of the JLabel to a lovely greeting.
 
