@@ -8,6 +8,7 @@ import javax.swing.JApplet;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class JackInTheBox {
 
@@ -19,10 +20,11 @@ public class JackInTheBox {
 
 	void createGUI() {
 JFrame j = new JFrame();
-Panel p = new Panel();
+JPanel p = new JPanel();
 JButton B = new JButton();
 j.add(p);
 p.add(B);
+j.setVisible(true);
 	}
 
 	private void showPicture(String fileName) {
@@ -62,7 +64,14 @@ p.add(B);
 	          e.printStackTrace();
 	     }
 	}
-	
+	private void playSound(String soundFile) { 
+	     try {
+	          AudioClip sound = JApplet.newAudioClip(getClass().getResource(soundFile));
+	          sound.play();
+	     } catch (Exception e) {
+	          e.printStackTrace();
+	     }
+	}
 
 
 
