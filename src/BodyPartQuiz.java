@@ -56,10 +56,17 @@ JOptionPane.showMessageDialog(null, "Wrong, that's arnold shwartzneger");
 		    // 8. Show them their current score
 System.out.println(score);}
 			// 9. .... repeat for all your images.....
+	String guess= JOptionPane.showInputDialog("who is this?");{
 
-
+	if (guess.equals ("Leonardo di caprio")) {
+		score++;
+		JOptionPane.showMessageDialog(null, "Correct");
+	}else {
+	JOptionPane.showMessageDialog(null, "Wrong, that's leonardo di caprio");
+	}
+	}
 	
-		
+	
 	
 
 	
