@@ -1,13 +1,18 @@
 import java.awt.Button;
+import java.awt.event.ActionListener;
 import java.net.URI;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class CutenessTv {
+public class CutenessTv implements ActionListener {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+       
+	}
+	void setup () {
 		JFrame j = new JFrame();
 		JPanel p = new JPanel();
 		Button b = new Button();
@@ -18,10 +23,11 @@ public class CutenessTv {
         p.add(u);
         p.add(T);
         j.setVisible(true);
-       if (condition) {
-		
+        b.addActionListener(this);
+        u.addActionListener(this);
+        T.addActionListener(this);
 	}
-	}
+	
 	void showDucks() {
 	   
 		playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
